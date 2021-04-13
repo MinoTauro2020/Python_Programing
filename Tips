@@ -8,3 +8,48 @@ domains = ['ya.com','ti.es'] #list
 ip = ("111.11","2222")   #tuple
 server = {"uber":"nginx","tomato":"test"} #diccionari
 vulns_vers = {5.5,1.1,2,3} # set
+------------------------------
+------------------------------
+url = "http://google.com"
+print(url[7]) # g is in 7th position.Index starting from 0
+print(len(url)) # print number of characters in url.
+print(url.split('/')[2]) 
+[‘http:’,’’, ‘google.com’]
+
+String
+Delete a string in a word
+language = "malayalam"
+print(language.strip("m"))
+
+Rstrip
+Delete a string at the end
+language = "malayalam"
+print(language.strip("m"))
+
+Lstrip
+Remove string from the start
+language = "malayalam"
+print(language.lstrip("m"))
+
+Replace
+language = "malayalam"
+print(language.replace("l","j"))
+
+Count letters or numbers
+language = "malayalam"
+print(language.count('l'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

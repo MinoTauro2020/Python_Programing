@@ -39,6 +39,11 @@ Count letters or numbers
 language = "malayalam"
 print(language.count('l'))
 
+language = "malayalam"
+print(language.startswith('m'))
+print(language.endswith('m'))
+
+
 
 
 

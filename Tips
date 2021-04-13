@@ -10,38 +10,191 @@ server = {"uber":"nginx","tomato":"test"} #diccionari
 vulns_vers = {5.5,1.1,2,3} # set
 ------------------------------
 ------------------------------
-url = "http://google.com"
-print(url[7]) # g is in 7th position.Index starting from 0
-print(len(url)) # print number of characters in url.
+url = "http://google.es"
+print(url[7]) # g is in 0-7
+print(len(url)) # numers letter
 print(url.split('/')[2]) 
-[‘http:’,’’, ‘google.com’]
+[‘http:’,’’, ‘google.com’] #separate
 
 String
 Delete a string in a word
-language = "malayalam"
-print(language.strip("m"))
+language = "willi"
+print(language.strip("1"))
 
 Rstrip
 Delete a string at the end
-language = "malayalam"
-print(language.strip("m"))
+language = "tomas"
+print(language.strip("s"))
 
 Lstrip
 Remove string from the start
-language = "malayalam"
-print(language.lstrip("m"))
+language = "touran"
+print(language.lstrip("t"))
 
 Replace
-language = "malayalam"
-print(language.replace("l","j"))
+language = "coco"
+print(language.replace("o","u"))
 
 Count letters or numbers
-language = "malayalam"
-print(language.count('l'))
+language = "lam"
+print(language.count('l')) 1
 
-language = "malayalam"
+Stars and End true or false
+language = "malei"
 print(language.startswith('m'))
 print(language.endswith('m'))
+
+String Formatting
+app = "drupal"
+version = 2.0
+print("%s version %s is vulnerable" % (app,version))
+---------------------------------------------------------------------
+List
+----------
+data = ["yaztel.com",3,7.5]
+print("domain "+data[0])
+print(data[-2]) # negative indexing, you can access last element by -1 index
+and second last element by -2
+print(len(data)) # print size of the list
+print("Port :"+str(data[1]))
+
+Ports = [70,81]
+ports.remove(70) # remove function delete element 80 from list
+ports.append(8080) # append function add element 8080 at last place
+ports.insert(1,81) # insert function add element 81 in specified position
+ports.pop() # pop function removes specific index elements if index is
+ports.clear() #clean list
+---------------------------------------------------------------------
+Tuple #similar but the element are defined
+---------
+tup = ("ua.com",40,4.7)
+numbers = {1,2,3,4,5,6}
+numbers_2 = {4,5,6,7,8,9}
+print(numbers.union(numbers_2))
+print(numbers.intersection(numbers_2))
+numbers = {1,2,3,4,5,6}
+numbers.add(7) # add new element to set
+numbers.discard(5) # remove element 5 from set
+numbers.remove(8) # we can use remove function but it raise exception if
+element not present
+-------------------------------------------------------------------
+Dictionary #good like JSON
+----------
+tv = {"samsoi":450,"tesl":650,"anoni":999}
+print(tv['samsoi'])
+print(tv['tesl'])
+
+print(tv.keys()) # print only keys
+print(tv.values()) # print only values
+
+update
+tv.update({"samsoi":999999})
+print(tv)
+del tv["samsoi"]
+print(tv)
+
+print(tv.get("samsoi"))
+---------------------------------------------------------------------
+BASIC OPERATORS
+---------
+A = 1
+b = 2
+Print(A+b)
+Print(A-b)
+Print(A*b)
+Print(A/b)
+Print(A**b)
+
+string = will
+string_1 = smi
+string_2 = smile
+print(string + string_1 + string_2
+------------------------------------------------------------------
+CONDITIONS  
+---------------
+fixed_version = 8
+version = 7
+if version < fixed_version:
+        print ("version {} is vulnerable".format(version))
+else:
+        print ("Not Vulnerable")
+        
+ELSE IF
+app = 'wordpress'
+if app == 'drupal':
+   wordlist = 'drupal.txt'
+elif app == 'wordpress':
+   wordlist = 'wordpress.txt'   # only choose the file
+-------------------------------------------------------------------
+WHILE LOOP
+----------
+i=1
+while i<=50:
+print(i)
+------------------------------------------------------------------
+FOR LOOP
+---------
+for i in range(1,51): #range function generates a list from 1 to 50.
+print(i) #print 1 to 50
+-
+domains = ['pa.com','ay.com','yaoo.com']
+for domain in domains:
+print(domain)
+-
+phones = {"red":10000,"kia":15000,"op":10000}
+for phone in phones:
+print(phones[phone])
+-
+url = "https://goo.com"
+for u in url: # iterate over string
+print(u)
+--------------------------------------------------------------------------
+FUNCTIONS
+
+def hello(): # function without arguments
+print("Hello World")
+hello()
+
+def add(a,b): # function without arguments
+return a+b
+print(add(5,4))
+
+def isdomainlive(domain):
+#here to do something to check whether the domain is alive or not.
+return True #or False
+
+if isdomainlive("subdomain.example.com"):
+#perform something if domain is live
+print("domain is alive")
+------------------------------------------------------------------------
+ARBITRARY ARGUMENTS TUPLAS
+
+def printdomains(*domains): # function definition
+   for domain in domains:
+       print(domain)
+printdomains("google.com","apple.com","microsoft.com") # function call
+-----------------------------------------------------------------------
+ARBITRARY KEYWORD ARGUMENTS DICCIONARY
+
+def domaininfo(**domain):
+     for key in domain:
+        print(domain[key])
+domaininfo(host="google.com",port=443
+-----------------------------------------------------------------------
+DEFAULT PARAMETER VALUE
+def vulnerable(yes=True):
+  if yes:
+    print("Vulnerable")
+  else:
+    print("Not Vulnerable")
+vulnerable(yes=False) # print as not vulnerable
+vulnerable() # print as vulnerable,because it takes default value.
+
+
+
+
+
+
 
 
 

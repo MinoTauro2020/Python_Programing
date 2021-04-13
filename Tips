@@ -1,0 +1,10 @@
+#Variables
+
+url = "http://google.es" #string
+port = 8888              #int
+version = 3.7            #float
+vulnerable = True        # boolean
+domains = ['ya.com','ti.es'] #list
+ip = ("111.11","2222")   #tuple
+server = {"uber":"nginx","tomato":"test"} #diccionari
+vulns_vers = {5.5,1.1,2,3} # set

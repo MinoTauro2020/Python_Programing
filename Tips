@@ -182,6 +182,7 @@ def domaininfo(**domain):
 domaininfo(host="google.com",port=443
 -----------------------------------------------------------------------
 DEFAULT PARAMETER VALUE
+
 def vulnerable(yes=True):
   if yes:
     print("Vulnerable")
@@ -189,6 +190,32 @@ def vulnerable(yes=True):
     print("Not Vulnerable")
 vulnerable(yes=False) # print as not vulnerable
 vulnerable() # print as vulnerable,because it takes default value.
+-----
+def printobjects(data):
+    if isinstance(data,dict):
+     for key in data:
+        print(data[key])
+    else:
+        for value in data:
+print(value)
+printobjects([1,2,3,4,5])
+printobjects(("A","B","C","D"))
+printobjects({1.1,2.2,3.3,4.4})
+printobjects({"redmi":7000,"oppo":10000})
+-------------------------------------------------------------------------
+
+FILE OPERATIONS read,write,append
+
+domains = ["google.com","yahoo.com","ebay.com","hola"]
+domain_file = open("domain.txt","w")
+for domain in domains:
+ domain_file.write(domain+"\n")
+domain_file.close()
+
+
+
+
+
 
 
 
